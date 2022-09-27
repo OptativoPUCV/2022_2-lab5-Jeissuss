@@ -2,3 +2,14 @@ Tue 27 Sep 2022 12:25:53 AM UTC:
  tests:  1|8
 total_score: 0/70
 95bf484
+Tue 27 Sep 2022 12:30:39 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘createTreeMap’:
+treemap.c:40:13: error: unused variable ‘newTree’ [-Werror=unused-variable]
+   40 |   TreeMap * newTree = (TreeMap *) malloc(sizeof(TreeMap));
+      |             ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9e688d3
