@@ -81,7 +81,7 @@ void removeNode(TreeMap * tree, TreeNode* node) {
     }else if (tree->lower_than(node->pair->key, parentNode->pair->key) == 1) {
       parentNode->left = NULL; 
     }
-  if ((node->left != NULL && node->right == NULL) || (node->left == NULL && node->right != NULL)) {
+    }else if ((node->left != NULL && node->right == NULL) || (node->left == NULL && node->right != NULL)) {
     if (node->left == NULL) {
       if (tree->lower_than(parentNode->pair->key, node->pair->key) == 1) {
         parentNode->right = node->right; 
