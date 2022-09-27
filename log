@@ -52,3 +52,9 @@ treemap.c:43:3: error: ‘neTree’ undeclared (first use in this function); did
 treemap.c:43:3: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 41667a0
+Tue 27 Sep 2022 12:33:05 AM UTC: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  1|8
+total_score: 0/70
+266f792
