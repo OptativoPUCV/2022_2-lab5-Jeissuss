@@ -199,3 +199,14 @@ treemap.c:142:14: error: variable ‘node’ set but not used [-Werror=unused-bu
 cc1: all warnings being treated as errors
 Compilation failed
 d57daf2
+Tue 27 Sep 2022 12:46:31 AM UTC: 
+ treemap.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:142:14: error: variable ‘node’ set but not used [-Werror=unused-but-set-variable]
+  142 |   TreeNode * node;
+      |              ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1d4a0a3

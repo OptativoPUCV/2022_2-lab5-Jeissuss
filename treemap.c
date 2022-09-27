@@ -145,10 +145,10 @@ Pair * upperBound(TreeMap * tree, void* key) {
   while (tree -> current != NULL){
     if (tree -> lower_than(key,tree -> current -> pair -> key) == 1 ){
       node = tree -> current;
-      
-      
+      if(tree -> current -> left == NULL){
+        break;
       }tree -> current = tree -> current -> left;
-    
+    }
   }
   return NULL;
 }
