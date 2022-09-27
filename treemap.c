@@ -147,7 +147,14 @@ Pair * upperBound(TreeMap * tree, void* key) {
       node = tree -> current;
       if(tree -> current -> left == NULL){
         break;
-      }tree -> current = tree -> current -> left
+      }tree -> current = tree -> current -> left;
+    }else if (is_equal(tree, key,tree -> current -> pair -> key) == 1){
+      node = tree -> current;
+      break;
+    }else
+    if(tree -> current -> right == NULL){
+        break;
+      }tree -> current = tree -> current -> right;
     }
   }
   return NULL;
