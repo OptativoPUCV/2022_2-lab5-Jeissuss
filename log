@@ -249,3 +249,14 @@ treemap.c:159:3: error: control reaches end of non-void function [-Werror=return
 cc1: all warnings being treated as errors
 Compilation failed
 ae92d66
+Tue 27 Sep 2022 12:47:01 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:142:14: error: variable ‘node’ set but not used [-Werror=unused-but-set-variable]
+  142 |   TreeNode * node;
+      |              ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d59eacc
